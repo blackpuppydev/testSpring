@@ -11,26 +11,26 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@Configuration
+//@Configuration
 //@EnableSwagger2
 public class SpringFoxConfig {
 
-    @Bean
-    public Docket produceApi() {
-        return new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.testSpringShop.api"))
-                .paths(PathSelectors.any()).build();
-    }
+//    @Bean
+//    public Docket produceApi() {
+//        return new Docket(DocumentationType.SWAGGER_2)
+//                .select()
+//                .apis(RequestHandlerSelectors.basePackage("com.example.testSpringShop.api"))
+//                .paths(PathSelectors.any()).build();
+//    }
 
-    // Describe your apis
-    private ApiInfo apiInfo() {
-        return new ApiInfoBuilder()
-                .title("testShop swagger")
-                .description("This page lists all the rest apis for testShop swagger.")
-                .version("1.0-SNAPSHOT")
-                .build();
-
-    }
+//    // Describe your apis
+//    private ApiInfo apiInfo() {
+//        return new ApiInfoBuilder()
+//                .title("testShop swagger")
+//                .description("This page lists all the rest apis for testShop swagger.")
+//                .version("1.0-SNAPSHOT")
+//                .build();
+//
+//    }
 
 }
